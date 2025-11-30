@@ -1,15 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  plugins: [react()],
+export default {
+  plugins: [],
   server: {
-    port: 5313,
-    proxy: {
-      '/api': {
-        target: 'https://indian-constitution-git-main-j-jeevachaithanyas-projects.vercel.app/',
-        changeOrigin: true
-      }
-    }
+    port: 5173,
+  },
+  build: {
+    outDir: 'dist'
   }
-})
+};
