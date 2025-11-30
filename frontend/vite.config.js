@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5313,
     proxy: {
       '/api': {
-        target: 'http://localhost:5312',
+        target: 'https://indian-constitution-git-main-j-jeevachaithanyas-projects.vercel.app/',
         changeOrigin: true
       }
     }
